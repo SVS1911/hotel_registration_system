@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StayEasy Hotel Booking System
 
 A simple hotel booking project using HTML, CSS, JavaScript, Axios and JSON Server.
@@ -17,3 +18,6 @@ A simple hotel booking project using HTML, CSS, JavaScript, Axios and JSON Serve
 - js/api.js: API requests and small helpers
 - exception/errors.js: custom errors
 - db.json: hotel, room and booking data
+=======
+# hotel_registration_system
+>>>>>>> 48a30ae5f13b3ac4b62988ccb90ab705e3ad506b
