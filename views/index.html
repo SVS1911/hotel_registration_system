@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <title>
+   Hotel Booking System
+  </title>
+ </head>
+ <body>
+  <header>
+   <div>
+    <h1>
+     StayEasy
+    </h1>
+    <p>
+     Simple hotel reservations
+    </p>
+   </div>
+   <nav>
+    <a href="index.html">
+     Hotels
+    </a>
+    <a href="history.html">
+     My Bookings
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <h2>
+     Find Your Perfect Stay
+    </h2>
+    <p>
+     Search hotels by name or location and filter by maximum price.
+    </p>
+    <form id="searchForm">
+     <div>
+      <label for="location">
+       Location / Hotel
+      </label>
+      <input id="location" placeholder="e.g. Hyderabad"/>
+     </div>
+     <div>
+      <label for="maxPrice">
+       Maximum Price
+      </label>
+      <input id="maxPrice" min="0" placeholder="₹5000" type="number"/>
+     </div>
+     <button type="submit">
+      Search
+     </button>
+     <button id="clearFilters" type="button">
+      Clear
+     </button>
+    </form>
+   </section>
+   <section>
+    <h2>
+     Available Hotels
+    </h2>
+    <p id="hotelCount">
+     Loading...
+    </p>
+    <div class="grid" id="hotelList">
+    </div>
+    <p class="message" hidden="" id="noHotelsMessage">
+     No hotels found.
+    </p>
+    <div id="pagination">
+    </div>
+   </section>
+  </main>
+  <footer>
+   <p>
+    &copy; 2026 StayEasy Hotel Booking System
+   </p>
+  </footer>
+  <script src="../js/main.js" type="module">
+  </script>
+ </body>
+</html>

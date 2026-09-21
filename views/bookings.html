@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <title>
+   Book Room
+  </title>
+ </head>
+ <body>
+  <header>
+   <div>
+    <h1>
+     StayEasy
+    </h1>
+    <p>
+     Simple hotel reservations
+    </p>
+   </div>
+   <nav>
+    <a href="index.html">
+     Hotels
+    </a>
+    <a href="history.html">
+     My Bookings
+    </a>
+   </nav>
+  </header>
+  <main>
+   <p>
+    <a href="rooms.html">
+     &larr; Back to Rooms
+    </a>
+   </p>
+   <section class="panel">
+    <h2>
+     Complete Your Booking
+    </h2>
+    <div id="roomDetails">
+     Loading room...
+    </div>
+    <form class="booking-form" id="bookingForm">
+     <div>
+      <label for="checkIn">
+       Check-in
+      </label>
+      <input id="checkIn" required="" type="date"/>
+     </div>
+     <div>
+      <label for="checkOut">
+       Check-out
+      </label>
+      <input id="checkOut" required="" type="date"/>
+     </div>
+     <div>
+      <label for="guests">
+       Guests
+      </label>
+      <input id="guests" max="10" min="1" required="" type="number" value="1"/>
+     </div>
+     <div>
+      <h3>
+       Total:
+       <span id="totalAmount">
+        ₹0
+       </span>
+      </h3>
+     </div>
+     <div>
+      <button type="submit">
+       Confirm Booking
+      </button>
+     </div>
+    </form>
+    <p hidden="" id="errorMessage">
+    </p>
+    <p hidden="" id="successMessage">
+    </p>
+   </section>
+  </main>
+  <footer>
+   <p>
+    &copy; 2026 StayEasy Hotel Booking System
+   </p>
+  </footer>
+  <script src="../js/main.js" type="module">
+  </script>
+ </body>
+</html>
